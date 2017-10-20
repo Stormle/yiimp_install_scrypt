@@ -65,6 +65,8 @@ output ""
     sudo useradd stratum -s /bin/bash
     sudo usermod -p '!' stratum
     sudo chown -R stratum.stratum /home/stratum
+    echo 'stratum soft nofile 10240
+stratum soft nproc 10240' | sudo -E tee --append /etc/security/limits.conf
 
     output "Installing Nginx server."
     output ""
