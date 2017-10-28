@@ -198,6 +198,9 @@ default         0;
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     cd ~
     git clone https://github.com/poolnine/yiimp.git
+    cd yiimp
+    git config core.fileMode false
+    cd ..
     sudo cp -r yiimp /home/frontend
     sudo cp -r yiimp /home/panel
     cd $HOME/yiimp/blocknotify
