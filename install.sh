@@ -138,6 +138,7 @@ default         0;
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     cd ~
     git clone https://github.com/npq7721/gr_pool.git
+    cp -r gr_pool yiimp
     cd yiimp
     cd blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
