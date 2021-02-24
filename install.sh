@@ -62,7 +62,8 @@
     hide_output sudo apt -y update 
     hide_output sudo apt -y upgrade
     hide_output sudo apt -y autoremove
-    apt_install dialog python3 python3-pip acl nano apt-transport-https
+    sudo apt-get install -y software-properties-common
+    sudo apt-get install -y dialog python3 python3-pip acl nano apt-transport-https
     echo -e "$GREEN Done...$COL_RESET"
 
 
