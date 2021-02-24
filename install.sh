@@ -62,7 +62,7 @@
     sudo apt -y update 
     sudo apt -y upgrade
     sudo apt -y autoremove
-    apt_install dialog python3 python3-pip acl nano apt-transport-https
+    sudo apt-get -y install dialog python3 python3-pip acl nano apt-transport-https
     echo -e "$GREEN Done...$COL_RESET"
 
 
