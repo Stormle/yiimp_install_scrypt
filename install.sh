@@ -369,10 +369,11 @@
     
     # Compil Blocknotify
     cd ~
-    hide_output git clone https://github.com/tpruvot/yiimp
+    hide_output git clone https://github.com/npq7721/gr_pool
+    mv gr_pool yiimp
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
-    hide_output sudo make
+    sudo make
     
     # Compil iniparser
     cd $HOME/yiimp/stratum/iniparser
